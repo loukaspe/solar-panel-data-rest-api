@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  solar-panel-data-app:
+    container_name: solar-panel-data-app
+    build:
+      context: ..
+      dockerfile: ./build/Dockerfile.dev
+    ports:
+      - "8080:8080"
+      - "40000:40000"
+    restart: always
+    volumes:
+      - ./:/usr/src/app/

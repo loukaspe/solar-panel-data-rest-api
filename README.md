@@ -11,7 +11,7 @@ generate csv files
 
 ## Run
 
-`make start-app`
+`cd script && make start-app`
 
 * This command will start the app with `localhost` address and `:8080` port (specified in build/Dockerfile.devand .env) 
 

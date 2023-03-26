@@ -1,0 +1,73 @@
+### HEALTH CHECK
+
+GET http://localhost:8080/health-check
+Content-Type: application/json
+
+### CREATE
+
+POST http://localhost:8080/solar-panel-data
+Content-Type: application/json
+
+{
+  "solar": {
+    "38d503e5-dc1c-4549-8172-09d9c29070f7": [
+      [
+        "20211231T221500Z",
+        "0.0"
+      ]
+    ],
+    "51df2e4c-2002-11ea-95a5-525400b2701a": [
+      [
+        "20220101T060000Z",
+        "81.9354839"
+      ]
+    ],
+    "c078ff68-04fb-11e9-a615-42010afa015a": [
+      [
+        "20220101T060000Z",
+        "81.9354839"
+      ]
+    ]
+  },
+  "wind": null
+}
+
+###  DELETE
+
+DELETE http://localhost:8080/solar-panel-data/6
+Content-Type: application/json
+
+###  GET
+
+
+GET http://localhost:8080/solar-panel-data/uuid
+Content-Type: application/json
+
+###  UPDATE
+
+PUT http://localhost:8080/solar-panel-data/uuid
+Content-Type: application/json
+
+{
+  "solar": {
+    "38d503e5-dc1c-4549-8172-09d9c29070f7": [
+      [
+        "20211231T221500Z",
+        "0.0"
+      ]
+    ],
+    "51df2e4c-2002-11ea-95a5-525400b2701a": [
+      [
+        "20220101T060000Z",
+        "81.9354839"
+      ]
+    ],
+    "c078ff68-04fb-11e9-a615-42010afa015a": [
+      [
+        "20220101T060000Z",
+        "81.9354839"
+      ]
+    ]
+  },
+  "wind": null
+}

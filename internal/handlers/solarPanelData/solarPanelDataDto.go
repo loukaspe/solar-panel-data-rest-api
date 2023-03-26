@@ -11,6 +11,10 @@ type CreateSolarPanelDataResponse struct {
 	ErrorMessage  string `json:"errorMessage,omitempty"`
 }
 
+type GetSolarPanelDataResponse struct {
+	SolarPanelDataEvents [][]string
+}
+
 type DeleteSolarPanelDataResponse struct {
 	ErrorMessage string `json:"errorMessage,omitempty"`
 }

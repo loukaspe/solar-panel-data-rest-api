@@ -10,3 +10,7 @@ type CreateSolarPanelDataResponse struct {
 	DataSubmitted *Dto   `json:"dataSubmitted,omitempty"`
 	ErrorMessage  string `json:"errorMessage,omitempty"`
 }
+
+type DeleteSolarPanelDataResponse struct {
+	ErrorMessage string `json:"errorMessage,omitempty"`
+}

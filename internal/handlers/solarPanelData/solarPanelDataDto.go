@@ -18,3 +18,7 @@ type GetSolarPanelDataResponse struct {
 type DeleteSolarPanelDataResponse struct {
 	ErrorMessage string `json:"errorMessage,omitempty"`
 }
+
+type UpdateSolarPanelDataResponse struct {
+	ErrorMessage string `json:"errorMessage,omitempty"`
+}

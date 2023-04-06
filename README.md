@@ -1,4 +1,4 @@
-# Accepted Home Project
+# Solar Panel Data REST API
 
 ---
 
